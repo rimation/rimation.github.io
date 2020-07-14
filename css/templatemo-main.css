@@ -802,7 +802,7 @@ ul > li:before {
 }
 
 .bg-zinski {
-  background-image: url("http://raw.githubusercontent.com/rimation/img/master/jt001_web.gif");
+  background-image: url("../img/client-zinski.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
