@@ -23,7 +23,7 @@
 
 <body>
 
-    <div class="fixed-side-navbar">
+    <div class="fixed-side-navbar d-none d-md-block">
         <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#services"><span>Capabilities</span></a></li>
@@ -40,7 +40,7 @@
     </div>
 
 
-    <div class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" id="services">
+    <div class="carousel slide carousel-fade service list" data-ride="carousel" data-pause="false" id="services">
 
         <div class="carousel-item services-sw active"></div>
         <div class="carousel-item services-uiux"></div>
@@ -49,9 +49,9 @@
         <div class="carousel-item services-ee"></div>
         <div class="carousel-item services-sys"></div>
 
-        <div class="service list container">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5 col-lg-4">
                     <div class="left-text">
                         <h4><strong>About Rimation</strong></h4>
                         <div class="line-dec"></div>
@@ -69,9 +69,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7 col-lg-8">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 col-sm-10 mx-sm-auto mb-5">
                             <div class="service-item active" data-target="#services" data-slide-to="0">
                                 <h4>Software Engineering</h4>
                                 <div class="line-dec"></div>
@@ -83,7 +83,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 col-sm-10 mx-sm-auto mb-5">
                             <div class="service-item" data-target="#services" data-slide-to="1">
                                 <h4>UI/UX Design</h4>
                                 <div class="line-dec"></div>
@@ -95,7 +95,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 col-sm-10 mx-sm-auto mb-5">
                             <div class="service-item" data-target="#services" data-slide-to="2">
                                 <h4>Electronics & Embedded Systems</h4>
                                 <div class="line-dec"></div>
@@ -107,7 +107,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 col-sm-10 mx-sm-auto mb-5">
                             <div class="service-item" data-target="#services" data-slide-to="3">
                                 <h4>Industrial Design</h4>
                                 <div class="line-dec"></div>
@@ -119,7 +119,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 col-sm-10 mx-sm-auto mb-5">
                             <div class="service-item" data-target="#services" data-slide-to="4">
                                 <h4>Electrical Engineering</h4>
                                 <div class="line-dec"></div>
@@ -131,7 +131,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-12 col-sm-10 mx-sm-auto mb-5">
                             <div class="service-item" data-target="#services" data-slide-to="5">
                                 <h4>Systems Architecture & Integration</h4>
                                 <div class="line-dec"></div>
@@ -149,7 +149,7 @@
         </div>
     </div>
 
-    
+
     <div class="parallax-content clients list" id="clients">
         <div class="container">
             <div class="row">
@@ -160,8 +160,8 @@
             </div>
 
             <div class="row py-3">
-                        <div class="col-md-4">
-                            <div class="row mx-auto clients-item">
+                        <div class="col-md-4 mb-4 mb-md-0 col-sm-10 mx-sm-auto">
+                            <div class="clients-item">
                                 <div class="bg-mcq">
                                     <div class="overlay">
                                         <img class="center" src="http://lh4.googleusercontent.com/onoHxCId6FZMqsFjreLeOYpE9QPfrdPjcjXXrWF0zvzNlLK81LP6pg" alt="">
@@ -177,8 +177,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="row mx-auto clients-item">
+                        <div class="col-md-4 mb-4 mb-md-0 col-sm-10 mx-sm-auto">
+                            <div class="clients-item">
                                 <div class="bg-zinski">
                                     <div class="overlay">
                                         <div class="center text-center th" style="font-size:2.4em; font-weight:bold; font-family:constantia;">ZINSKI</div>
@@ -195,8 +195,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="row mx-auto clients-item">
+                        <div class="col-md-4 mb-4 mb-md-0 col-sm-10 mx-sm-auto">
+                            <div class="clients-item">
                                 <div class="bg-daedalus">
                                     <div class="overlay">
                                         <img class="center" src="https://drive.google.com/uc?export=view&id=16JJ5YITZsABYdAQoYCfO2mk4_BUUbmX9">
@@ -214,6 +214,9 @@
         </div>
     </div>
 
+
+
+
     <div class="parallax-content process" id="process">
         <div class="container">
             <div class="row">
@@ -222,7 +225,7 @@
                     <div class="line-dec"></div>
                 </div>
             </div>
-            <div class="row">
+            <div>
                 <h1 style="color:#0097AF;">1. Ideation</h1>
                 <h1 style="color:#90D81A;">2. Specification</h1>
                 <h1 style="color:#FA6400;">3. Conceptualization</h1>
@@ -279,46 +282,46 @@
     <div class="studio" id="studio">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 left-text">
+                <div class="col-md-5 col-lg-4 left-text">
                     <h4><strong>Studio Works</strong></h4>
                     <div class="line-dec"></div>
                     <p>Rimation's realization studio is constantly brewing ideas that help our society and our environment. We love challenges. We also love solutions. Have a peek at some of our R&D works below or collaborate with us to create what this world needs!</p>
-                <div class="primary-button mt-5 pt-5">
+                <div class="primary-button">
                     <a href="#contact">Collaborate with Us!</a>
                 </div>
                 </div>
 
 
-                <div class="col-md-8">
-                    <div class="row mb-4">
-                        <div class="col-md-10 m-auto">
+                <div class="col-md-7 col-lg-8">
+                    <div class="row mx-auto mb-4">
+                        <div class="col-md-12 col-lg-10 m-auto">
                             <div class="row studio-item">
                                 <img src="img/studio-offgrid.jpg" alt="">
-                                <h1>1. OFFGRID POWER</h1>
+                                <h5>1. OFFGRID POWER</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-md-10 m-auto">
+                    <div class="row mx-auto mb-4">
+                        <div class="col-md-12 col-lg-10 m-auto">
                             <div class="row studio-item">
                                 <img src="img/studio-blockchain2.jpg" alt="">
-                                <h1>2. LATTICE ENERGY BLOCKCHAIN</h1>
+                                <h5>2. LATTICE ENERGY BLOCKCHAIN</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-md-10 m-auto">
+                    <div class="row mx-auto mb-4">
+                        <div class="col-md-12 col-lg-10 m-auto">
                             <div class="row studio-item">
                                 <img src="img/studio-energymanagement.jpg" alt="">
-                                <h1>3. BUILDING ENERGY MANAGEMENT</h1>
+                                <h5>3. BUILDING ENERGY MANAGEMENT</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-md-10 m-auto">
+                    <div class="row mx-auto mb-4">
+                        <div class="col-md-12 col-lg-10 m-auto">
                             <div class="row studio-item">
                                 <img src="img/studio-covid.jpg" alt="">
-                                <h1>4. COVID-19 REAL-TIME RISK MAPPING</h1>
+                                <h5>4. COVID-19 REAL-TIME RISK MAPPING</h5>
                             </div>
                         </div>
                     </div>
@@ -340,41 +343,39 @@
                     <p>We can't wait to hear from you - drop us a line at <a href="mailto:contact@rimation.com">contact@rimation.com</a>!</p>
                 </div>
             </div>
-            <div class="row my-4">
-                <div class="col-md-6">
-                        
+            <div class="row mt-3 mb-5">
+                <div class="col-md-6 mb-5 mb-md-0">
                             <form id="contact" action="" method="post">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-sm-10 mx-auto">
                                       <fieldset>
                                         <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
                                       </fieldset>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-sm-10 mx-auto">
                                       <fieldset>
                                         <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
                                       </fieldset>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-sm-10 mx-auto">
                                       <fieldset>
                                         <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                                       </fieldset>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-sm-10 mx-auto">
                                       <fieldset>
                                         <button type="submit" id="form-submit" class="btn">Let's Do This!</button>
                                       </fieldset>
                                     </div>
                                 </div>
-                            </form>
-                        
+                            </form>           
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 my-5 my-md-0 col-sm-10 mx-auto">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198524.3090037467!2d-77.52950024882054!3d38.97098485557355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b638060f5da643%3A0x928022b51c6c357d!2sHerndon%2C%20VA%2020170!5e0!3m2!1sen!2sus!4v1594656040833!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
-            <div class="row py-5">
-                <div class="col-md-2">
+            <div class="row">
+                <div class="col-sm-3 col-lg-2 mb-5">
                     <h5 class="underline">RIMATION</h5>
                         <ul>
                             <li><a href="#services">About Us</a></li>
@@ -382,7 +383,7 @@
                             <li><a href="#process">Our Process</a></li>
                         </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-5 col-lg-4 mb-5">
                     <h5 class="underline">SERVICES</h5>
                         <ul>
                             <li><a href="#services">Software Engineering</a></li>
@@ -393,7 +394,7 @@
                             <li><a href="#services">Systems Architecture & Integration</a></li>
                         </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-4 col-lg-4 mb-5">
                     <h5 class="underline">STUDIO WORKS</h5>
                         <ul>
                             <li><a href="#studio">Offgrid Freedom</a></li>
@@ -426,7 +427,6 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
@@ -458,6 +458,7 @@
           })
 
         });
+        
     </script>
 
 </body>
