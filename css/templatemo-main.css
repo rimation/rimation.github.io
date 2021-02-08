@@ -486,6 +486,7 @@ footer p {
   height: 200px;
   position: relative;
   width: 100%;
+  background-color: white;
 }
 
 .bg-mcq {
@@ -503,6 +504,22 @@ footer p {
 
 .bg-daedalus img{
   height: 60%;
+}
+
+.bg-esta img{
+  height: 40%;
+}
+
+.bg-esta {
+  background-image: url("../img/client-esta_bg.jpg");
+}
+
+.bg-GMLC {
+  //background-image: url("../img/client-esta_bg.jpg");
+}
+
+.bg-GMLC img{
+  height: 40%;
 }
 
 .overlay{
