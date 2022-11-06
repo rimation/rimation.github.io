@@ -201,11 +201,8 @@ h4 {
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 50%;
   background-position: center center;
-  height: 100%;
-  
+
   @media (max-width: @iphone-screen) {
       background-attachment: scroll;
   }
