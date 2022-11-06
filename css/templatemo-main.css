@@ -197,12 +197,15 @@ h4 {
 .service, .clients, .process, .studio, .contact{
   padding: 15vh 15px;
   min-height: 100vh;
-  background-attachment: fixed;
+  //background-attachment: fixed;
+  background-attachment: scroll;
+  background-size: 100vmax 100vmax;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-position: center center;
   height: 100%;
+
 }
 
 .service .container{
@@ -620,7 +623,8 @@ footer p {
     background-size: cover;
    -moz-background-size: cover;
    -webkit-background-size: cover;
-  background-attachment: fixed;
+  //background-attachment: fixed;
+  background-attachment: scroll;
   position: absolute;
   min-height: 100vh;
   height: 100%;
