@@ -164,8 +164,14 @@ h4 {
   background-image: url("../img/bg-home.jpg");
 }
 
+.home > div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 .home h1, .process h1 {
-  margin: 0px;
+  margin:-20px 0px -20px 0px;
   font-size: 128px;
   color: #fff;
   font-weight: 900;
@@ -179,10 +185,13 @@ h4 {
 
 .home span {
   display: inline-block;
-  margin-top: -20px;
   font-weight: 300;
   font-size: 48px;
   color: #fff;
+}
+
+.home img{
+  margin-right: 2em;
 }
 
 .service, .clients, .process, .studio, .contact{
@@ -434,15 +443,26 @@ footer p {
 
   .home h1 {
     font-size: 60px;
+    margin:0px 0px -10px 0px;
   }
 
   .home span {
     font-size: 23px;
   }
 
+  .home img{
+    margin: 0px;
+    padding-bottom: 1em;
+  }
+
+  .home > div {
+    display:initial;
+  }
+
   .service .service-item ul>li{
     text-indent: -30px;
   }
+
 
 
 
@@ -470,6 +490,42 @@ footer p {
 
 }
 
+/*
+** md
+*/
+@media (min-width: 768px) {
+  .home h1 {
+    margin:-20px 0px -20px 0px;
+    font-size: 95px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .home span {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 36px;
+    color: #fff;
+  }
+
+  .home img{
+    margin-right: 1em;
+    max-width: 30%;
+  }
+}
+
+
+/*
+** lg
+*/
+@media (min-width: 992px) {
+}
+
+
+/*
+** xl
+*/
 @media (min-width: 1200px) {
 }
 
