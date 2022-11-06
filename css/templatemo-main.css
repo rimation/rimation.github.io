@@ -191,6 +191,7 @@ h4 {
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center center;
   height: 100%;
 }
@@ -562,6 +563,7 @@ footer p {
 .carousel-item{
     background-size: cover;
    -moz-background-size: cover;
+   -webkit-background-size: cover;
   background-attachment: fixed;
   position: absolute;
   min-height: 100vh;
