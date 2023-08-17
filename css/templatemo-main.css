@@ -157,12 +157,18 @@ h4 {
   background-size: cover;
 }
 
+.home.mocean{
+  padding-top: 30vh;
+  text-align: center;
+  background-image: url("../img/mocean/bg-home.png");
+}
 
 .home {
   padding-top: 30vh;
   text-align: center;
   background-image: url("../img/bg-home.jpg");
 }
+
 
 .home > div {
     display:flex;
@@ -276,6 +282,12 @@ h4 {
 
 .studio {
   background-image: url("../img/services-id.jpg");
+  //background-size: 180%;
+  //background-position: center 21%;
+}
+
+.studio.mocean {
+  background-image: url("../img/mocean/solution.jpg");
   //background-size: 180%;
   //background-position: center 21%;
 }
