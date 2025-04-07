@@ -157,6 +157,12 @@ h4 {
   background-size: cover;
 }
 
+.home.lattice{
+  padding-top: 40vh;
+  text-align: center;
+  background-image: url("../img/lattice/bg-home.png");
+}
+
 .home.mocean{
   padding-top: 30vh;
   text-align: center;
@@ -289,6 +295,13 @@ h4 {
 .service.mocean {
   background-image: url("../img/mocean/service.jpg");
 }
+
+.studio.lattice {
+  background-image: url("../img/lattice/solution.jpg");
+  //background-size: 180%;
+  //background-position: center 21%;
+}
+
 
 .studio.mocean {
   background-image: url("../img/mocean/solution.jpg");
