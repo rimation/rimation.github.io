@@ -7,6 +7,7 @@
 		<link rel="preload" as="image" href="images/homepage/hero.webp">
 		<link rel="stylesheet" href="static/css/a176ab3c0e11976f.css?dpl=dpl_DRbELcnY2SxtUwNi2RCAG3mqkTBo" data-precedence="next">
 		<link rel="preload" as="script" fetchpriority="low" href="static/chunks/webpack-9b436a8a112e3e26.js?dpl=dpl_DRbELcnY2SxtUwNi2RCAG3mqkTBo">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 		  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -55,22 +56,11 @@
 		<script src="static/chunks/polyfills-42372ed130431b0a.js?dpl=dpl_DRbELcnY2SxtUwNi2RCAG3mqkTBo" nomodule=""></script>
 	</head>
 	<body class="h-screen __variable_f367f3 __variable_a3c0d3 antialiased">
-		<script>((e,t,r,n,o,a,i,s)=>{let l=document.documentElement,u=["light","dark"];function c(t){(Array.isArray(e)?e:[e]).forEach(e=>{let r="class"===e,n=r&&a?o.map(e=>a[e]||e):o;r?(l.classList.remove(...n),l.classList.add(t)):l.setAttribute(e,t)}),s&&u.includes(t)&&(l.style.colorScheme=t)}if(n)c(n);else try{let e=localStorage.getItem(t)||r,n=i&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;c(n)}catch(e){}})("class","theme","light",null,["light","dark"],null,true,true)</script>
-		<div class="bg-primary relative">
-			<div class="container flex items-center justify-between gap-4 py-3 pr-12">
-				<div class="flex flex-1 items-center justify-center gap-3 sm:gap-4"><span class="text-primary-foreground text-center text-sm font-medium">Purchase this theme on <span class="font-semibold">shadcnblocks.com</span></span><a href="https://shadcnblocks.com/template/streamline" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-8 rounded-lg px-3 text-xs">Get Template</a></div>
-				<button class="absolute top-1/2 right-4 -translate-y-1/2 rounded-sm p-1.5 text-primary-foreground/70 hover:text-primary-foreground transition-all duration-200 hover:scale-110 hover:bg-white/10 focus:ring-2 focus:ring-white/30 focus:outline-none" aria-label="Close banner">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-3.5">
-						<path d="M18 6 6 18"></path>
-						<path d="m6 6 12 12"></path>
-					</svg>
-				</button>
-			</div>
-		</div>
+		
 		<header class="relative z-50 bg-sand-100">
 			<div class="max-w-9xl container">
 				<div class="flex items-center justify-between py-3">
-					<a class="flex items-center gap-2" href="/"><img alt="logo" loading="lazy" width="129" height="32" decoding="async" data-nimg="1" class="dark:invert" style="color:transparent" src="images/logi.png"></a>
+					<a class="flex items-center gap-2" href="/"><img alt="logo" loading="lazy" width="129" height="32" decoding="async" data-nimg="1"src="images/logo.png"></a>
 					<nav aria-label="Main" data-orientation="horizontal" dir="ltr" class="relative z-10 max-w-max flex-1 justify-center hidden items-center gap-8 lg:flex">
 						<div style="position:relative">
 							<ul data-orientation="horizontal" class="group flex flex-1 list-none items-center justify-center space-x-1" dir="ltr">
@@ -237,7 +227,7 @@
 							<div class="overflow-hidden">
 								<div class="flex -ml-4 size-full" style="">
 									<div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4" style="">
-										<div class="relative size-full min-h-[30rem] rounded-t-xl"><img alt="Streamline product interface showing Kanban" decoding="async" data-nimg="fill" class="object-cover object-left-top" style="" src="images/Picture1.png"></div>
+										<div class="relative h-full rounded-t-xl"><img alt="Streamline product interface showing Kanban" decoding="async" data-nimg="fill" class="object-fill object-left-top" style="" src="images/Picture1.png"></div>
 									</div>
 									<!--<div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4">
 										<div class="relative size-full min-h-[30rem] overflow-hidden rounded-t-xl"><img alt="Streamline product interface showing Issues" loading="lazy" decoding="async" data-nimg="fill" class="object-cover object-left-top" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="images/homepage/hero2.webp"></div>
@@ -377,6 +367,8 @@
       </div>
       <div class="bg-card text-card-foreground border shadow-sm mt-8 rounded-3xl md:mt-12 lg:mt-20">
          
+<h2>Upload Excel & Map Coordinates</h2>
+
 <style>
     body { font-family: Arial; margin: 0; }
     #controls { padding: 10px; background:#f5f5f5; }
@@ -385,21 +377,36 @@
     button { padding:6px 12px; }
     #results { padding: 10px; font-weight: bold; }
   </style>
-<div id="controls">
-  <!--<input id="addr1" placeholder="Address or lat,lng #1">
-  <input id="addr2" placeholder="Address or lat,lng #2">-->
-  Location 1: <input id="addr1" value="41.716,-73.885">
-  Location 2: <input id="addr2" value="41.773,-73.876">
-  <button type="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-semibold transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2" onclick="process()">Process</button>
-</div>
 
-<div id="results"></div>
+
+ <p>Active File: <strong id="file-name">Sample.xlsx</strong></p>  
+
+<input type="file" id="demo-upload" accept=".xlsx,.xls" style="display:none"/>
+
+  <!-- Manual trigger button -->
+  <button type="button" onclick="document.getElementById('demo-upload').click()" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-semibold transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+    Change File
+  </button>
+
+
+
+<br/>
+<label for="columnSelect">Select column containing coordinates:</label>
+<select id="columnSelect" disabled></select>
+<br/>
+<button id="plotBtn" disabled class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-semibold transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">Plot on Map</button>
+
 <div id="map"></div>
 
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
-let map = L.map('map').setView([39, -98], 4);
+let sheetData = null;
 
-/* ---------- Base Layers ---------- */
+
+// Initialize map
+const map = L.map('map').setView([37.7749, -122.4194], 4);
+
 
 // Street map
 const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -424,68 +431,131 @@ L.control.layers(
 ).addTo(map);
 
 
-/* ---------- App Logic ---------- */
+// Handle Excel file upload
+async function readColumns(file) {
+   // 1. Convert file to ArrayBuffer
+    const data = await file.arrayBuffer();
+    
+    // 2. Read the workbook
+    const workbook = XLSX.read(data, {type: 'array'});
 
-let layers = [];
+    // Take first sheet
+    const firstSheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[firstSheetName];
+    sheetData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
-function clearMap(){
-  layers.forEach(l=>map.removeLayer(l));
-  layers=[];
+    // Populate column dropdown
+    const columnSelect = document.getElementById('columnSelect');
+    columnSelect.innerHTML = '';
+    sheetData[0].forEach((header, idx) => {
+      const option = document.createElement('option');
+      option.value = idx;
+      option.text = header || `Column ${idx+1}`;
+      columnSelect.appendChild(option);
+    });
+
+    columnSelect.disabled = false;
+    document.getElementById('plotBtn').disabled = false;
+
 }
 
-async function geocode(input){
-  // If lat,lng provided
-  if(input.includes(',')){
-    let [lat,lng] = input.split(',').map(v=>parseFloat(v.trim()));
-    return {lat, lng, label: input};
+async function prefillDefaultFile() {
+    const fileInput = document.getElementById('demo-upload');
+    const fileNameDisplay = document.getElementById('file-name');
+    const url = "static/Sample.xlsx"; // Your server file path
+
+    try {
+        // 1. Fetch the file from your server
+        const response = await fetch(url);
+        const blob = await response.blob();
+        
+        // 2. Create a new File object
+        const defaultFile = new File([blob], "Sample.xlsx", {
+            type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        });
+
+        // 3. Use DataTransfer to programmatically "fill" the input
+        const dataTransfer = new DataTransfer();
+        dataTransfer.items.add(defaultFile);
+        fileInput.files = dataTransfer.files;
+
+        // Update UI
+        fileNameDisplay.textContent = defaultFile.name;
+        readColumns(defaultFile)
+        console.log("Default file pre-filled successfully.");
+    } catch (err) {
+        fileNameDisplay.textContent = "Error loading default file.";
+        console.error(err);
+    }
+
+    // Update UI when user chooses a different file
+    fileInput.addEventListener('change', (e) => {
+        if (e.target.files.length > 0) {
+            fileNameDisplay.textContent = e.target.files[0].name;
+            readColumns(e.target.files[0]);
+
+        }
+    });
+}
+
+// Run on page load
+window.addEventListener('DOMContentLoaded', prefillDefaultFile);
+
+
+
+// Handle plot button click
+document.getElementById('plotBtn').addEventListener('click', () => {
+  const colIdx = document.getElementById('columnSelect').value;
+  if (!colIdx) return;
+
+  // Remove existing markers/circles
+  map.eachLayer(layer => {
+    if(layer instanceof L.Marker || layer instanceof L.Circle) map.removeLayer(layer);
+  });
+
+  const radiusMeters = 16093; // 10 miles ≈ 16,093 meters
+const bounds = L.latLngBounds(); // <-- stores all points
+  let hasPoints = false;
+
+
+  sheetData.slice(1).forEach((row, i) => {
+    const cell = row[colIdx];
+    if (!cell) return;
+
+    let lat, lon;
+
+    if (typeof cell === 'string' && cell.includes(',')) {
+      [lat, lon] = cell.split(',').map(Number);
+    } else if (Array.isArray(cell)) {
+      [lat, lon] = cell;
+    } else {
+      return;
+    }
+
+    if (!isNaN(lat) && !isNaN(lon)) {
+const latLng = [lat, lon];
+
+      // Marker
+      L.marker(latLng).addTo(map);
+
+      // Circle
+      L.circle(latLng, {
+        radius: radiusMeters,
+        color: 'blue',
+        fillOpacity: 0.1
+      }).addTo(map);
+
+       // Add point to bounds
+      bounds.extend(latLng);
+      hasPoints = true;
+    }
+  });
+  // Auto zoom to all markers
+  if (hasPoints) {
+    map.fitBounds(bounds, { padding: [50, 50] });
   }
-
-  let res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(input)}`);
-  let data = await res.json();
-  return {
-    lat: parseFloat(data[0].lat),
-    lng: parseFloat(data[0].lon),
-    label: input
-  };
-}
-
-async function process(){
-  clearMap();
-
-  let a1 = document.getElementById('addr1').value;
-  let a2 = document.getElementById('addr2').value;
-
-  let p1 = await geocode(a1);
-  let p2 = await geocode(a2);
-
-  let m1 = L.marker([p1.lat,p1.lng]).addTo(map).bindPopup(p1.label);
-  let m2 = L.marker([p2.lat,p2.lng]).addTo(map).bindPopup(p2.label);
-
-  let c1 = L.circle([p1.lat,p1.lng], {radius:16093, color:'blue', fillOpacity:0.2}).addTo(map);
-  let c2 = L.circle([p2.lat,p2.lng], {radius:16093, color:'blue', fillOpacity:0.2}).addTo(map);
-
-  layers.push(m1,m2,c1,c2);
-
-  map.fitBounds(L.featureGroup([m1,m2]).getBounds().pad(0.5));
-
-  // Turf circles
-  let tc1 = turf.circle([p1.lng,p1.lat], 10, {units:'miles'});
-  let tc2 = turf.circle([p2.lng,p2.lat], 10, {units:'miles'});
-
-  let intersects = turf.booleanIntersects(tc1, tc2);
-
-  if(intersects){
-    c1.setStyle({color:'red', fillColor:'red'});
-    c2.setStyle({color:'red', fillColor:'red'});
-    document.getElementById('results').innerHTML = 
-      `🔴 Circles overlap:<br>${p1.label}<br>${p2.label}`;
-  } else {
-    document.getElementById('results').innerHTML = 
-      `🟢 No overlap between:<br>${p1.label}<br>${p2.label}`;
-  }
-}
+});
 </script>
-
 
 
 
