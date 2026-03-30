@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/hero-slider.css">
         <link rel="stylesheet" href="css/templatemo-main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script> 
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -46,25 +46,28 @@
         </div>
     </div>
 
-<div id="services-track" style="height: 500vh; position: relative;">
-     <div class="site-outer" id="services" style="width:100%; position: sticky; top: 0; height: 100vh; overflow: hidden;">
-        <div class="accordion-wrapper container px-5 py-5" style="display: block; position: relative;  max-width: 100%; background-color: #fff;">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 col-lg-5 col-xl-4" style="font-size: 26px; font-weight: 600; line-height: 1.196; letter-spacing: -0.04em; text-align: center; font-family: Montserrat;">Delivering innovations since<br/><span class="h2014" style="color: #faaf00; ">2014</span>
+
+    <div class="site-outer" style="width:100%;  display: flex; flex-direction: column;  overflow: hidden;position: relative; height: 100vh; padding" id="services">
+        <div class="container" style="position: relative; padding: 60px 20% 30px 20%; max-width: 100%;">
+            <div class="mb-120 mb-sm-50 mb-xs-20" style="display: block;">
+                <div class="row section-text">
+                    <div class="col-md-12 col-lg-6 mb-md-50 mb-xs-30" style="font-size: 26px; font-weight: 600; line-height: 1.196; letter-spacing: -0.04em; text-align: center; font-family: Montserrat;">
+                        Delivering innovations since<br/><span style="font-size:155px;">2014</span>
                     </div>
-                    <div class="col-md-11 col-lg-5 col-xl-4" >
-                         <p style="font-size: 24px; color: #000; margin-bottom: 24px;">We are a <span style="font-weight:bold">trusted partner</span> for bringing high-stakes, dynamic projects to life.</p>
+                    <div class="col-md-6 col-lg-6 mb-sm-50 mb-xs-30" >
+                         <p style="font-size: 24px; color: #000; margin-bottom: 24px;">We are a <span style="font-weight:bold">trusted partner</span> in bringing high-stakes, dynamic projects to life.</p>
                          <p style="font-size: 15px; color: #000; line-height: 1.5;">From Concept to Delivery, we specialize in electronics design, software development, renewable energy systems integration, and engineering project management. We have delivered multiple high-stakes $MM projects involving multi-disciplinary teams for our clients ranging from entrepreneurs to startups, nonprofits, and government agencies.</p>
                     </div>                      
                 </div>
+            </div>
         </div>
             <!-- ACCORDION ROW -->
-<div class="site-inner row flex-grow-1" style="min-height: 0; margin: 0;">
- <ul class="accordion-group d-flex" id="accordion" style="height: 100%; margin: 0; padding: 0;">
-                         <li class="panel out" style="background-image: url('img/services-sw.jpg');">
+              <div class="site-inner row" style="flex-grow: 1; display: flex; margin: 0;">
+                    <ul class="accordion-group" id="accordion">
+                        <li style="background-image: url('https://images.unsplash.com/photo-1650600538903-ec09f670c391?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
                             <div class="accordion-overlay"></div>
                             <h3>Software Engineering</h3>
-                            <section class="hidden-xs dashed-list">
+                            <section class="hidden-xs">
                                 <article>
                                 <ul>
                                     <li>Desktop, Web & Mobile Applications</li>
@@ -75,10 +78,10 @@
                                 </article>
                             </section>
                         </li>
-                        <li class="panel" style="background-image: url('img/services-uiux.jpg');">
+                        <li class="out" style="background-image: url('https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
                             <div class="accordion-overlay"></div>
                             <h3>UI/UX Design</h3>
-                            <section class="hidden-xs dashed-list">
+                            <section class="hidden-xs">
                                 <article>
                                 <ul>
                                     <li>User Research & Discovery</li>
@@ -89,27 +92,27 @@
                                 </article>
                             </section>
                         </li>
-                        <li class="panel" style="background-image: url('img/services-electronics.jpg');">
+                        <li style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
                             <div class="accordion-overlay"></div>
-                            <h3>Electronics Design</h3>
-                            <section class="hidden-xs dashed-list">
+                            <h3>Electronics & Embedded Systems</h3>
+                            <section class="hidden-xs">
                                 <article>
                                 <ul>
                                     <li>Analog, RF & Digital Circuit Design</li>
                                     <li>IoT Connectivity & Communications</li>
-                                    <li>Embedded Firmware & RTOS</li>
+                                    <li>Firmware & RTOS</li>
                                     <li>Rapid Prototyping & Manufacturing</li>
                                 </ul>
                                 </article>
                             </section>
                         </li>
-                        <li class="panel" style="background-image: url('img/services-power.jpg');">
+                        <li style="background-image: url('https://images.unsplash.com/photo-1589275776107-e193042128bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
                             <div class="accordion-overlay"></div>
                             <h3>Power Systems</h3>
-                            <section class="hidden-xs dashed-list">
+                            <section class="hidden-xs">
                                 <article>
                                     <ul>
-                                        <li>Renewable Energy Systems Integration</li>
+                                        <li>Renewable Energy Systems Design</li>
                                         <li>Control Systems</li>
                                         <li>Building Energy Management</li>
                                         <li>Demand Flexibility Optimization</li>
@@ -117,15 +120,15 @@
                                 </article>
                             </section>
                         </li>
-                        <li class="panel" style="background-image: url('img/services-proj.png');">
+                        <li style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Rillsoft-multi-project-gantt-chart.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');">
                             <div class="accordion-overlay"></div>
                             <h3>Strategy & Management</h3>
-                            <section class="hidden-xs dashed-list">
+                            <section class="hidden-xs">
                                 <article>
                                     <ul>
                                         <li>Engineering Management</li>
                                         <li>Product Strategy</li>
-                                        <li>Technical Specification</li>
+                                        <li>Technical Scoping</li>
                                         <li>System & Platform Architecture Design</li>
                                     </ul>
                                 </article>
@@ -134,16 +137,18 @@
                     </ul>
             </div>
     </div>
-</div>
+
 
     <!-- #clients -->
-    <div class="parallax-content clients dashed-list" id="clients">
+    <div class="parallax-content clients list" id="clients">
         <div class="container">
-            <div class="row" style="margin-top:-30px; margin-bottom: 40px;">
-                    <div class="col-lg-12 mb-md-50 mb-xs-30" style="font-size: 26px; font-weight: 600; line-height: 1.196; letter-spacing: -0.04em; text-align: center; font-family: Montserrat; padding-top: -100px;">
-                        Select Engagements</span>
-                    </div>
+            <div class="row">
+                <div class="col-md-12 left-text">
+                    <h4><strong>Select Engagements</strong></h4>
+                    <div class="line-dec"></div>
+                </div>
             </div>
+
             <div class="row py-3">
                 <div class="col-md-4 mb-4 mb-md-0 col-sm-10 mx-sm-auto">
                     <div class="clients-item">
@@ -153,9 +158,8 @@
                             </div>
                         </div>
                         <div class="text-content">
-                            <h4 class="title">McQ Inc.</h4>
-                            <h4 class="subtitle">U.S. Defense Contractor</h4>
-                            <ul class="txt">
+                            <h4>McQ Inc. | Defense Contractor</h4>
+                            <ul>
                                 <li>Shock-hardened munition embedded systems design</li>
                                 <li>Power subsystem, analog, digital & RF circuit design</li>
                             </ul>
@@ -170,11 +174,10 @@
                             </div>
                         </div>
                         <div class="text-content">
-                            <h4 class="title">Boeing</h4>
-                            <h4 class="subtitle">Aerospace & Defense</h4>
-                            <ul class="txt">
-                                <li>Custom desktop software for operating microchip test equipment</li>
-                                <li>Custom Verilog code generator for design process automation</li>
+                            <h4>Boeing | Aerospace & Defense</h4>
+                            <ul>
+                                <li>Custom desktop software for operating microchip test equipment.</li>
+                                <li>Custom Verilog code generator for design process automation.</li>
                             </ul>
                         </div>
                     </div>
@@ -187,11 +190,10 @@
                             </div>
                         </div>
                         <div class="text-content">
-                            <h4 class="title">Daedalus Yachts</h4>
-                            <h4 class="subtitle">Yacht Builder</h4>
-                            <ul class="txt">
-                                <li>Integration of renewable energy (wind, solar, batteries) & control systems for custom 88' carbon fiber luxury performance sailing catamaran</li>
-                                <li>Project management, building of one of world's first solid-state Hydrogen Compression + Extraction containers</li>
+                            <h4>Daedalus Yachts | Yacht Builder</h4>
+                            <ul>
+                                <li>Project management for fabrication of one of world's first containerized Hydrogen Compression + Extraction systems</li>
+                                <li>Integration of renewable energy systems (wind, solar, batteries) & control systems</li>
                             </ul>
                         </div>
                     </div>
@@ -207,9 +209,8 @@
                             </div>
                         </div>
                         <div class="text-content">
-                            <h4 class="title">ESTA International</h4>
-                            <h4 class="subtitle">Energy & Power Consultancy</h4>
-                            <ul class="txt">
+                            <h4>ESTA International | Energy & Power Consultancy</h4>
+                            <ul>
                                 <li>Smart Grid machine learning software application system design, UIUX design, and cloud deployment</li>
                             </ul>
                         </div>
@@ -223,9 +224,8 @@
                             </div>
                         </div>
                         <div class="text-content">
-                            <h4 class="title">NETL</h4>
-                            <h4 class="subtitle">U.S. National Lab</h4>
-                            <ul class="txt">
+                            <h4>DOE NETL | US National Lab</h4>
+                            <ul>
                                 <li>Industry advisor for "Blockchain for Optimized Security and Energy Management"</li>
                             </ul>
                         </div>
@@ -239,9 +239,8 @@
                             </div>
                         </div>
                         <div class="text-content">
-                            <h4 class="title">J. Zinski</h4>
-                            <h4 class="subtitle">Entrepreneur</h4>
-                            <ul class="txt">
+                            <h4>J. Zinski | Entrepreneur</h4>
+                            <ul>
                                 <li>Analog electronics design</li>
                                 <li>Component sourcing</li>
                                 <li>Printed circuit board fabrication</li>
@@ -253,21 +252,68 @@
         </div>
     </div>
 
+    
+    <!-- #studio -->
+  <!--    <div class="studio" id="studio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 left-text">
+                    <h4><strong>Our Solutions</strong></h4>
+                    <div class="line-dec"></div>
+                    <p>Rimation's realization studio is constantly brewing ideas that help our society and our environment. We love challenges. We also love solutions. Have a peek at some of our R&D works below or collaborate with us to create what this world needs!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="wrapper row">
+                    
+                    <ul class="tabs col-md-4 text-right my-auto" data-tabgroup="first-tab-group">
+                      <li><a href="#tab1" class="active">MOCEAN hybrid propulsion systems</a></li>
+                      <li><a href="#tab2" >Offgrid Freedom</a></li>
+                      <li><a href="#tab3">Lattic Energy Blockchain</a></li>
+                      <li><a href="#tab4">Building Energy Management</a></li>
+                    </ul>
+
+                    <section id="first-tab-group" class="tabgroup col-md-8">
+                      <div id="tab1">
+                      	<a href="MOCEAN.html" target="_blank" rel="noopener noreferrer">
+                        	<img src="img/mocean/engine-solution.png" alt="">
+                        </a>
+                        <p>Unlike any system that exists in the market today, MOCEAN offers a redundant system where vessels can be driven directly by both an engine AND/OR an electric motor, thereby saving space, reducing energy losses, while eliminating need for an onboard generator. <a href="MOCEAN.html" target="_blank" rel="noopener noreferrer">Discover more.</a></p>
+                      </div>
+                      <div id="tab2">
+                        <img src="https://raw.githubusercontent.com/rimation/rimation.github.io/master/img/studio-solar.jpg" alt="">
+                        <p>To have freedom is to have power. Rimation has created a lightweight yet heavy-duty sustainable mobile offgrid system capable of powering your daily energy needs. 3 days' worth of energy in a 1.5ft³ box! And yes, you can even induction cook + use your power tools.</p>
+                      </div>
+                      <div id="tab3">
+                        <img src="img/studio-blockchain2.jpg" alt="">
+                        <p>Supporting green energy production doesn't have to be expensive. Rimation's Lattice Energy Blockchain allows you to trade energy with anyone, giving you the power of choice while fostering mutually beneficial relationships among consumers, prosumers, and even utility companies. Get cheaper electricity prices while helping the world become greener!</p>
+                      </div>
+                      <div id="tab4">
+                        <img src="img/studio-energymanagement.jpg" alt="">
+                        <p>Our Energy Management platform allows you to monitor and control your HVAC, plug loads, lights, as well as PV and batteries. It supports various IoT devices and protocols, such as Ethernet/Wifi, ZigBee, Modbus, and BACnet.</p>
+                      </div>
+                    </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
 
     <!-- #contact -->
     <div class=" contact" id="contact">
         <div class="container">
-            <div class="row" style="margin-top:-30px; margin-bottom: 60px;">
-                    <div class="col-lg-12 mb-md-50 mb-xs-30" style="font-size: 26px; font-weight: 600; line-height: 1.196; letter-spacing: -0.04em; text-align: center; font-family: Montserrat; padding-top: -100px; color:#fff;">
-                        Contact Us</span>
-                    </div>
-            </div>
-
-
-            <div class="row mt-3 <!--mb-5-->">
-                
-                <div class="col-md-6 mb-5 mb-md-0">
+            <div class="row">
+                <div class="col-md-12 left-text">
+                    <h4><strong>Contact Us</strong></h4>
+                    <div class="line-dec"></div>
                     <p>We can't wait to hear from you - drop us a line at <a href="mailto:contact@rimation.com">contact@rimation.com</a>!</p>
+                </div>
+            </div>
+            <div class="row mt-3 <!--mb-5-->">
+                <div class="col-md-6 mb-5 mb-md-0">
                     <form id="contact" action="https://api.staticforms.xyz/submit" target="_self" method="POST">
                     	<input type="hidden" name="accessKey" value="f3124629-3542-4dfe-838d-68a5d47dc689">
                     	<input type="hidden" name="redirectTo" value="http://rimation.com/thanks"/>
@@ -313,80 +359,21 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-
-
-
-
-const lenis = new Lenis({
-    duration: 1.2,
-    smoothWheel: true
-});
-
-function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
-// Accordion Control Logic
-lenis.on('scroll', () => {
-    const track = document.getElementById('services-track');
-    const panels = document.querySelectorAll('.accordion-group .panel');
-    
-    // Get the bounding box of the tall track
-    const rect = track.getBoundingClientRect();
-    
-    // Calculate how far the user has scrolled through the track (0 to 1)
-    // -rect.top is how many pixels the top of the track has moved past the top of the screen
-    const trackHeight = rect.height - window.innerHeight;
-    let progress = -rect.top / trackHeight;
-    
-    // Clamp between 0 and 1
-    progress = Math.max(0, Math.min(1, progress));
-
-    // Calculate which index should be active (0 to 4)
-    const activeIndex = Math.floor(progress * panels.length);
-
-    panels.forEach((panel, index) => {
-        // We use Math.min to ensure the last panel stays open at the very end
-        if (index === Math.min(activeIndex, panels.length - 1)) {
-            panel.classList.add('out');
-        } else {
-            panel.classList.remove('out');
-        }
-    });
-
-
-
-    const servicesContainer = document.getElementById('services');
-    
-    // If user has scrolled more than 10% into the track, 'hide' the text
-    if (progress > 0.1) {
-        servicesContainer.classList.add('accordion-covering');
-    } else {
-        servicesContainer.classList.remove('accordion-covering');
-    }
-});
-
-
-
-
-
         // Initialize Lenis
-        // const lenis = new Lenis({
-        //   duration: 1.2,      // How long the scroll takes (higher = slower/smoother)
-        //   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Acceleration/Deceleration curve
-        //   wheelMultiplier: 1, // Sensitivity for mouse wheel
-        //   smoothWheel: true
-        // });
+        const lenis = new Lenis({
+          duration: 1.2,      // How long the scroll takes (higher = slower/smoother)
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Acceleration/Deceleration curve
+          wheelMultiplier: 1, // Sensitivity for mouse wheel
+          smoothWheel: true
+        });
 
-        // // Use requestAnimationFrame to force smooth updates
-        // function raf(time) {
-        //   lenis.raf(time);
-        //   requestAnimationFrame(raf);
-        // }
+        // Use requestAnimationFrame to force smooth updates
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
 
-        // requestAnimationFrame(raf);
+        requestAnimationFrame(raf);
 
         //Connect navbar links so they use this same smooth engine
         document.querySelectorAll('.fixed-side-navbar a').forEach(anchor => {
@@ -398,14 +385,6 @@ lenis.on('scroll', () => {
             }
           });
         });
-
-
-
-
-
-
-
-
     </script>
     <script type="text/javascript">
         (function () {

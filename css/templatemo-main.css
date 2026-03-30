@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: auto !important;
+}
+
 p {
   font-size: 15px;
   line-height: 25px;
@@ -24,19 +28,24 @@ ul {
   list-style: none;
   text-align: left;
 }
-.list ul>li:before{
-  content: "\2013\00a0";
-}
-.list ul>li{
-  text-indent: -12px;
-}
-
-
 
 h4 {
   font-size: 18px; //24px;
   font-weight: 500;
   color: #fff;
+}
+.clients h4, .process h4, .studio h4, .studio p{
+  color: #000;
+}
+
+.dashed-list ul li:before{
+  content: "\2013\00a0";
+  display: inline;
+}
+.dashed-list ul li{
+  text-indent: -12px;
+  display: block !important;
+  padding-bottom: 5px; 
 }
 
 .line-dec{
@@ -49,25 +58,11 @@ h4 {
   margin: 20px 0px 20px 0px;
 }
 
-.primary-button a {
-  display: inline-block;
-  background-color: #fa6400;
-  padding: 15px 24px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  text-align: center;
-}
 
 
 /*----------
-  NAV
+  NAVBAR
 ----------*/
-
 .fixed-side-navbar {
   position: fixed;
   top: 50%;
@@ -76,54 +71,45 @@ h4 {
   margin-top: -100px;
   text-align: right;
   padding: 30px 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.fixed-side-navbar:hover .nav > li > a > span {
-  color: #5e5e5e;
-  display: block;
-  background-color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 2px 12px;
-  //border-radius: 15px;
-  transform: skew(-20deg);
-}
-.fixed-side-navbar .nav > li a.active {
-  color: #c09;
-}
-.fixed-side-navbar .nav > li a.active:after {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-.fixed-side-navbar .nav > li a.active:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 17px;
-  margin-top: -8px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #fff;
-  border-radius: 10px;
 }
 .nav>li {
   position: relative;
   display: block;
 }
 .fixed-side-navbar .nav > li a {
-  color: #fff;
-  min-height: 32px;
-  padding: 5px 45px 5px 25px;
-  border-right: none;
+    padding: 5px 45px 5px 25px;
 }
+.fixed-side-navbar:hover .nav > li a span {
+  opacity: 1;
+  visibility: visible;
+
+}
+/*NAVBAR text*/
 .fixed-side-navbar .nav > li a span {
-  display: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+
+  color: #fff;
+/*  color: #5e5e5e;
+  background-color: #fff;*/
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 2px 12px;
+/*  transform: skew(-20deg);*/
 }
+.fixed-side-navbar .nav > li a.active span {
+  color: #c09;
+  font-weight: bold;
+}
+.fixed-side-navbar .nav > li a:hover > span {
+  /*font-weight: bold;*/
+  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+}
+/*NAVBAR dot*/
 .fixed-side-navbar .nav > li a:after {
   content: '';
   position: absolute;
@@ -139,16 +125,31 @@ h4 {
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
 }
-.fixed-side-navbar .nav > li a:hover {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-color: black;
-  border-right: 0;
+.fixed-side-navbar .nav > li a.active:after {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
-.fixed-side-navbar .nav > li a:hover > span {
-  color: #c09;
-  display: block;
+.fixed-side-navbar .nav > li a:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: rgba(250, 250, 250, 1);
 }
+/*NAVBAR active dot circle*/
+.fixed-side-navbar .nav > li a.active:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+
+
+
 
 
 .parallax-content {
@@ -156,56 +157,6 @@ h4 {
   min-height: 100vh;
   background-size: cover;
 }
-
-.home.lattice{
-  padding-top: 40vh;
-  text-align: center;
-  background-image: url("../img/lattice/bg-home.png");
-}
-
-.home.mocean{
-  padding-top: 30vh;
-  text-align: center;
-  background-image: url("../img/mocean/bg-home.png");
-}
-
-.home {
-  padding-top: 30vh;
-  text-align: center;
-  background-image: url("../img/bg-home.jpg");
-}
-
-
-.home > div {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.home h1, .process h1 {
-  margin:-20px 0px -20px 0px;
-  font-size: 128px;
-  color: #fff;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.process h1 {
-  font-size: 4.7vw;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
-}
-
-.home span {
-  display: inline-block;
-  font-weight: 300;
-  font-size: 48px;
-  color: #fff;
-}
-
-.home img{
-  margin-right: 2em;
-}
-
 .service, .clients, .process, .studio, .contact{
   padding: 15vh 15px;
   min-height: 100vh;
@@ -222,172 +173,163 @@ h4 {
   }
 }
 
-.service .container{
-  z-index: 100;
-  position: relative;
-}
 
-.service .left-text ul li{
-  margin: 15px 0px;
-  font-weight: 600;
-  color: #fff;
-}
 
-.primary-button {
-  margin: 4rem 0 5rem 0;
-}
-
-.service .service-item {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px;
+.home {
+  padding-top: 30vh;
   text-align: center;
+  background-image: url("../img/bg-home.jpg");
+}
+.home > div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.home h1, .process h1 {
+  margin:-20px 0px -20px 0px;
+  font-size: 128px;
   color: #fff;
-  height: 100%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.home span {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 48px;
+  color: #fff;
+}
+.home img{
+  margin-right: 2em;
 }
 
-.service-item .line-dec {
-  margin: 20px auto 15px auto;
-}
+
+
 
 
 
 .clients {
   background-image: url("../img/bg-clients.jpg");
 }
-
-.clients h4, .process h4, .studio h4, .studio p{
-  color: #000;
+/* Image styling */
+/*.thumb-container {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+.clients img {
+    max-height: 80%; /* Keeps logo centered and contained */
+    width: auto;
 }
-
-.clients .text-content h4{
-  margin: 0;
-  padding-bottom: 15px;
-}
-
-.clients .clients-item{
-  border:solid;
+.overlay{
+  background-color: rgba(255,255,255,0.4);
   height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
-.clients .text-content {
-  background-color: rgba(0,0,0,0.8);
-  padding: 20px 15px;
-  text-align: center;
-  height: calc(100% - 200px);
+.clients-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    background: #fff;
+    height: 280px; /* Fixed height for the card */
+    border-radius: 3px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+/*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);*/
+    
+}
+
+.clients-item > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  width: 100%;
+  background-color: white;
 }
 
 .clients .text-content, .clients .text-content h4{
+  margin: 0;
   color: #fff; //#5e5e5e;
 }
-
-
-.process {
-  background-image: url("../img/bg-process.jpg");
+.clients .text-content {
+  background-color: #333; /*rgba(0,0,0,0.8);*/
+  padding: 20px 15px;
+  text-align: left;
+  /*height: calc(100% - 200px);*/
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(.17,.67,.5,1.03);
+}
+.clients-item .txt {
+  padding-top: 15px;
+  opacity: 0;
+}
+.clients .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+.clients .subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Montserrat;
+}
+.clients-item:hover .text-content {
+    transform: translateY(-180px);
+}
+.clients-item:hover .txt {
+    opacity: 1;
 }
 
 
-.studio {
-  background-image: url("../img/services-id.jpg");
-  //background-size: 180%;
-  //background-position: center 21%;
+
+
+.bg-mcq {
+  background-image: url("../img/client-mcq_bg2.webp");
+}
+.bg-zinski {
+  background-image: url("../img/client-zinski.gif");
+}
+.bg-daedalus{
+  background-image: url("../img/client-daedalus_bg.jpeg");
+  background-position: 20%;
+}
+.bg-daedalus img{
+  height: 60%;
+}
+.bg-esta img{
+  height: 40%;
+}
+.bg-esta {
+  background-image: url("../img/client-esta_bg.jpg");
+}
+.bg-boeing img {
+}
+.bg-GMLC img{
+  height: 40%;
 }
 
-.service.mocean {
-  background-image: url("../img/mocean/service.jpg");
-}
-
-.studio.lattice {
-  background-image: url("../img/lattice/solution.jpg");
-  //background-size: 180%;
-  //background-position: center 21%;
-}
 
 
-.studio.mocean {
-  background-image: url("../img/mocean/solution.jpg");
-  //background-size: 180%;
-  //background-position: center 21%;
-}
 
-.studio-item{
-  //border: solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
-}
-
-.studio-item img{
-  height: 220px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.studio img{
-  width: 100%;
-}
-
-.studio p, .studio h4{
-  color: #fff;
-}
-
-.studio-item h5{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0,0,0,0.75);
-  margin: 0;
-  color: #fff;
-  padding:3px 7px;
-  font-weight: 700;
-  font-size: 2rem;
-}
-
-.tabs {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.tabs li {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
-}
-
-.tabs a {
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  text-transform:uppercase;
-  color:#fff;
-  font-size: 14px;
-  font-weight: 700;
-  padding:10px 15px;
-  border:4px solid #fff;
-}
-
-.tabs a:hover {
-  color: #fa6400;
-}
-
-.tabs .active {
-  border:4px solid #fa6400;
-}
-
-.tabgroup div  {
-
-}
-
-.tabgroup p {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 25px;
-}
 
 
 .contact {
-  background-image: url("../img/bg-contact.jpg");
+  background-image: url("../img/bg-contact2.jpg");
   padding-bottom: 0;
 }
-
 #contact input, #contact textarea, #contact button {
   border-radius: 0px;
   padding-left: 15px;
@@ -399,20 +341,17 @@ h4 {
   margin-bottom: 15px;
   width: 100%;
 }
-
 #contact input {
   line-height: 50px;
     height: 50px;
   
 }
-
 #contact textarea {
   height: 165px;
   max-height: 220px;
   width: 100%;
   padding-top: 10px;
 }
-
 #contact button {
   background-color: #fa6400;
   padding: 15px 24px;
@@ -424,25 +363,12 @@ h4 {
   letter-spacing: 0.5px;
   margin: 0;
 }
-
 .contact ul{
   padding-left:2rem;
 }
-
 .contact ul li a{
   color: #818b8c;
 }
-
-.underline::after{
-  content:"";
-  width: 32px;
-  height:1px;
-  background: #c2c2c2;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .contact h5{
   position: relative;
   color: #fff;
@@ -457,7 +383,6 @@ footer {
   background-color: #282b2f;
   padding: 10px 0px;
 }
-
 footer p {
   font-size: 12px;
   color: #fff;
@@ -497,31 +422,78 @@ footer p {
     text-indent: -30px;
   }
 
-
-
-
- /* .service {
-    padding-top: 5vh;
-    text-align: center;
+  .h2014 {
+    font-size:120px;
   }
 
-  .service .left-text .line-dec {
-    background-color: #fa6400;
-    margin: 20px auto 20px auto;
-  }
+   .accordion-group {
+        flex-direction: column !important;
+        height: 100% !important;
+    }
 
-  .service .left-text ul {
-    text-align: left;
-  }
+    .accordion-group li.panel {
+        width: 100% !important;
+        flex: 1 !important; /* Shared space */
+        transition: flex 0.5s ease;
+    }
 
-  .service .service-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 25px 30px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 30px;
-  }*/
+    .accordion-group li.panel.out {
+        flex: 12 !important; /* Expansion size on mobile */
+    }
 
+    /* Keep text from disappearing if you have 'hidden-xs' classes */
+/*    .hidden-xs {
+        display: block !important;
+    }*/
+     .accordion-wrapper.container {
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    .accordion-wrapper p {
+        font-size: 16px !important; /* Smaller text on mobile */
+        margin-bottom: 10px !important;
+    }
+    
+    .h2014 {
+        font-size: 80px !important; /* Scaled down for mobile vertical space */
+    }
+
+
+/*     //1. Ensure the top text stays behind the rising accordion
+    .accordion-wrapper.container {
+        position: relative;
+        z-index: 1;
+    }
+
+    //2. Force the accordion to grow and overlap
+    .site-inner.row {
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        //Start with the accordion showing only its headers at the bottom
+        height: 65% !important; 
+        z-index: 10;
+        background: #fff; //Solid background to hide the text behind it
+        transition: height 0.5s ease;
+    }
+
+    //3. When the first panel is 'out', expand the whole accordion to cover the text
+    #services-track:not([style*="top: 0"]) .site-inner.row {
+         height: 90% !important; //Expands to cover the 'From Concept...' text
+    }
+
+    //4. Fix vertical stacking for the panels
+    .accordion-group {
+        flex-direction: column !important;
+    }*/
+
+
+        .accordion-covering .col-md-11 p:last-child {
+display: none;
+        transition: all 0.5s ease;
+    }
 }
 
 /*
@@ -547,6 +519,14 @@ footer p {
     margin-right: 1em;
     max-width: 30%;
   }
+
+  .h2014 {
+    font-size:155px;
+  }
+
+
+    
+
 }
 
 
@@ -564,9 +544,6 @@ footer p {
 }
 
 @media (max-width: 1199px){
-  .process h1{
-    font-size:5.6vw;
-  }
 }
 
 
@@ -574,97 +551,240 @@ footer p {
 
 
 
-.clients-item > div {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
+
+
+
+
+/* The track that determines scroll duration */
+#services-track {
+  height: 500vh; /* Increase for a "slower" scroll feel */
   position: relative;
+}
+/* The actual accordion that stays on screen */
+.accordion-wrapper {
+  position: sticky;
+  top: 0;
+/*  height: 100vh;*/
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.accordion-group li.active {
+  flex: 5; /* This item expands when "active" */
+}
+/* ─── Outer wrapper ──────────────────────────────────── */
+.site-outer {
   width: 100%;
-  background-color: white;
+  /*display: flex;
+  flex-direction: column;*/
+  /*overflow: hidden;*/
+  position: relative;
+/*  height: 100vh;*/
 }
 
-.bg-mcq {
-  background-image: url("../img/client-mcq_bg.jpg");
+.site-inner.row {
+    flex-grow: 1; /* This tells it to grab all remaining vertical space */
+    display: flex;
+    flex-direction: row; /* Keep the panels side-by-side */
+    margin: 0;
+    min-height: 0; /* Critical: allows flex items to shrink/fit properly */
+    width: 100%;
+    height: 100%;
 }
 
-.bg-zinski {
-  background-image: url("../img/client-zinski.gif");
+.section-text {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
 }
 
-.bg-daedalus{
-  background-image: url("../img/client-daedalus_bg.jpeg");
-  background-position: 20%;
+.col-year {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.196;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #000;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.bg-daedalus img{
-  height: 60%;
+.col-year span {
+  display: block;
+  font-size: 120px;
+  font-weight: 700;
+  color: #cc0099;
+  line-height: 1;
 }
 
-.bg-esta img{
-  height: 40%;
+.col-desc p:first-child {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 24px;
+  line-height: 1.4;
 }
 
-.bg-esta {
-  background-image: url("../img/client-esta_bg.jpg");
+.col-desc p:last-child {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
 }
 
-.bg-boeing img {
+/* ─── Accordion wrapper ──────────────────────────────── */
+.site-inner {
+  flex-grow: 1;
+  display: flex;
+  margin: 0;
+  min-height: 0;
 }
 
-.bg-GMLC img{
-  height: 40%;
-}
-
-.overlay{
-  background-color: rgba(255,255,255,0.4);
-  height: 100%;
+.accordion-group {
   width: 100%;
-  position: absolute;
+  flex-direction: row;
+
+  /*overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  position: sticky;
+
+  flex:1;
+  height: 100%;*/
 }
 
-.center{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.services-sw{
-  background-image: url("../img/services-sw.jpg");
-}
-.services-uiux{
-  background-image: url("../img/services-uiux2.jpg");
-}
-.services-hw{
-  background-image: url("../img/services-hw.jpg");
-}
-.services-ee{
-  background-image: url("../img/services-ee.jpg");
-}
-.services-id{
-  background-image: url("../img/services-id.jpg");
-}
-.services-sys{
-  background-image: url("../img/services-sys.jpg");
-}
-
-.carousel-item{
-    background-size: cover;
-   -moz-background-size: cover;
-   -webkit-background-size: cover;
-  background-attachment: fixed;
-  position: absolute;
-  min-height: 100vh;
-  height: 100%;
+/* ─── Accordion panels ───────────────────────────────── */
+.accordion-group li {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin: 0;
+  padding: 1.4em 1.2em;
+  list-style: none;
+  flex: 1;
   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: flex 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-weight: 600;
+}
+
+.accordion-group li.out {
+  flex: 3;
+}
+
+/* ─── Overlay ────────────────────────────────────────── */
+.accordion-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   left: 0;
   top: 0;
+  transition: background 250ms ease-in-out;
+  background-color: rgba(0,0,0,0);
 }
 
-section .tabgroup {
-  border-color: #fff;
-  border-width: 2px;
-  border-style: solid;
+.accordion-group li.out .accordion-overlay {
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.84) 35%, rgba(0,0,0,0.0) 70%);
 }
+
+/* ─── Panel heading ──────────────────────────────────── */
+/*
+  Fixed height = 2 lines of text at 13px / line-height 1.3, plus top+bottom padding (8px each).
+  This keeps 1-line headers the same block height as 2-line headers.
+*/
+.accordion-group li h3 {
+  position: relative;
+  z-index: 2;
+  color: #000; 
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 8px 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: rgba(255,255,255,0.8);
+  width: 100%;
+  line-height: 1.3;
+  word-break: break-word;
+  white-space: normal;
+  height: calc(13px * 1.3 * 2 + 16px); /* 2 lines + 8px top + 8px bottom padding */
+  overflow: hidden;
+  font-family: Montserrat;
+}
+
+/* Expanded heading — same size & gold colour, no background */
+.accordion-group li.out h3 {
+  color: #c09; /* #F1C232;*/
+  background-color: transparent;
+  height: calc(13px * 1.3 * 2 + 16px);
+
+      border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #c09, #ffffffff);
+    border-image-slice: 1;
+    border-width: 0 0 2px 0;
+}
+
+/* ─── Separator bar ──────────────────────────────────── */
+.accent-bar {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 2px;
+  background: #F1C232;
+  margin: 6px 0 10px 0;
+  display: none;
+  flex-shrink: 0;
+}
+
+.accordion-group li.out .accent-bar {
+  display: block;
+}
+
+/* ─── Panel content (bullet list) ───────────────────── */
+.accordion-group li section {
+  position: relative;
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-group li.out section {
+  display: block;
+}
+
+.accordion-group li section article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.accordion-group li section article ul li {
+  font-size: 15px;
+  /*color: rgba(255,255,255,0.88);*/
+  color: rgba(0,0,0,0.88);
+  padding: 4px 0 4px 14px;
+  position: relative;
+  cursor: default;
+}
+
+/*.accordion-group li section article ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c09;
+}
+*/
+
+
+
