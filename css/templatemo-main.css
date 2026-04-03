@@ -320,6 +320,15 @@ h4 {
 .bg-GMLC img{
   height: 40%;
 }
+.bg-socalgas {
+  background-image: url("../img/client-socalgas_bg.png");
+}
+.bg-socalgas img{
+  transform: translate(-50%, -50%) scale(1.5);
+}
+.bg-socalgas .overlay {
+    background-color: rgba(255,255,255,0.65);
+  }
 
 
 
